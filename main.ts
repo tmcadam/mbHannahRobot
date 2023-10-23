@@ -1,6 +1,12 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    v = receivedNumber
+})
 let distance = 0
+let v = 0
+radio.setGroup(1)
+TPBot.headlightRGB(randint(0, 255), randint(0, 255), randint(0, 255))
+basic.showIcon(IconNames.Tortoise)
 basic.forever(function () {
-    let v = 0
     distance = TPBot.sonarReturn(TPBot.SonarUnit.Centimeters)
     if (v == 1 && distance > 20) {
         TPBot.setTravelSpeed(TPBot.DriveDirection.Forward, 100)
