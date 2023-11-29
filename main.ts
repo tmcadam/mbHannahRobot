@@ -4,7 +4,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 let distance = 0
 let v = 0
 radio.setGroup(1)
-TPBot.headlightRGB(randint(0, 255), randint(0, 255), randint(0, 255))
+TPBot.headlightColor(0xff0000)
 basic.showIcon(IconNames.Tortoise)
 basic.forever(function () {
     distance = TPBot.sonarReturn(TPBot.SonarUnit.Centimeters)
@@ -19,10 +19,8 @@ basic.forever(function () {
     } else if (v == 5) {
         TPBot.headlightRGB(randint(0, 255), randint(0, 255), randint(0, 255))
     } else if (v == 6) {
-    	
-    } else if (false) {
-    	
-    } else {
-    	
+        TPBot.setServo(TPBot.ServoTypeList.S360, TPBot.ServoList.S1, 180)
+    } else if (v == 7) {
+        TPBot.setServo(TPBot.ServoTypeList.S360, TPBot.ServoList.S1, 270)
     }
 })
