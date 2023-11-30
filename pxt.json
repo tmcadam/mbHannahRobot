@@ -6,7 +6,8 @@
         "radio": "*",
         "microphone": "*",
         "servo": "*",
-        "pxt-TPBot": "github:tmcadam/pxt-TPBot#c582b9e95f6017c4b354a7c7c6ceaf0c81727a61"
+        "pxt-TPBot": "github:tmcadam/pxt-TPBot#c582b9e95f6017c4b354a7c7c6ceaf0c81727a61",
+        "pxt-PlanetX-AI": "github:elecfreaks/pxt-planetx-ai#v1.0.2"
     },
     "files": [
         "main.blocks",
